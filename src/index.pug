@@ -5,6 +5,7 @@ html(lang="en")
     include meta_social.pug
     meta(charset='UTF-8')
     meta(name='description' content='Turn real code into faux code.')
+    meta(name="keywords" content="Code, Illustration, Imitation, Computational, Design, Art, JavaScript, Github, Gist, SVG, Vector")
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet")
     link(href="./styles/main.sass" rel="stylesheet")
@@ -56,10 +57,10 @@ html(lang="en")
         section.output
           p.output-head
             | Output (
-            a(download="fauxcode.svg").output-download Download
+            a(download="faux-code.svg").output-download Download SVG
             | )
           #fauxcode
-          a.output-button(download="fauxcode.svg") Download
+          a.output-button(download="faux-code.svg") Download SVG
 
       footer
         .acknowledgements
@@ -74,9 +75,9 @@ html(lang="en")
         .share
           p Share on:
           ul
-            li: a(href="https://twitter.com/intent/tweet?text=Faux%20Code%20Generator:%20Turn%20real%20code%20into%20faux%20code.%20http://knutsynstad.com/fauxcode/") Twitter
+            li: a(href="https://twitter.com/intent/tweet?text=Faux%20Code%20Generator:%20Turn%20real%20code%20into%20faux%20code.%20http://knutsynstad.com/fauxcode/" target="_blank") Twitter
             li: a(href="https://www.facebook.com/sharer/sharer.php?u=http://knutsynstad.com/fauxcode/" target="_blank") Facebook
-            li: a(href="https://www.linkedin.com/shareArticle?mini=true&url=http://knutsynstad.com/fauxcode/&summary=Faux%20Code%20Generator:%20Turn%20real%20code%20into%20faux%20code.") LinkedIn
+            li: a(href="https://www.linkedin.com/shareArticle?mini=true&url=http://knutsynstad.com/fauxcode/&summary=Faux%20Code%20Generator:%20Turn%20real%20code%20into%20faux%20code." target="_blank") LinkedIn
 
     script(src='./scripts/main.js')
     script.

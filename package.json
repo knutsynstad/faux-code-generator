@@ -5,7 +5,7 @@
   "main": "src/index.pug",
   "scripts": {
     "dev": "parcel src/index.pug",
-    "build": "rm -rf dist && parcel build --no-minify src/index.pug --public-url ./"
+    "build": "rm -rf dist && parcel build --no-minify src/index.pug --public-url ./ && cp -a ./public/. ./dist/"
   },
   "author": "",
   "license": "",

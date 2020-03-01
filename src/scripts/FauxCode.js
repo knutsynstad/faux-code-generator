@@ -16,7 +16,7 @@ const getElementThemeColor = (element, theme) => {
     const type = bindings[className];
     if (theme[type]) return theme[type];
     if (process.env.NODE_ENV === 'development') {
-      console.log('Unresolved syntax class: ', className);
+      console.warn('Unresolved syntax class: ', className);
     }
   }
   return theme.text;
