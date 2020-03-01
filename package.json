@@ -1,0 +1,22 @@
+{
+  "name": "faux-code-generator",
+  "version": "0.1.0",
+  "description": "Turn real code into faux code.",
+  "main": "src/index.pug",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "build": "rm -rf dist && parcel build --no-minify src/index.pug --public-url ./"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.25.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}

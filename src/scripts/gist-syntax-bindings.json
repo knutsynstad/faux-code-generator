@@ -1,0 +1,23 @@
+{
+  "pl-c": "comment",
+  "pl-c1": "atom",
+  "pl-s pl-v": "atom",
+  "pl-e": "attribute",
+  "pl-en": "attribute",
+  "pl-smi": "text",
+  "pl-s1": "text",
+  "pl-ent": "tag",
+  "pl-k": "keyword",
+  "pl-s": "string",
+  "pl-pds": "string",
+  "pl-s pl-pse pl-s1": "string",
+  "pl-sr": "string",
+  "pl-sr pl-cce": "string",
+  "pl-sr pl-sre": "string",
+  "pl-sr pl-sra": "string",
+  "pl-v": "variable",
+  "pl-sr pl-cce": "tag",
+  "pl-mdr": "variable",
+  "pl-corl": "string",
+  "pl-kos": "text"
+}

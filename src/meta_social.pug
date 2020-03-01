@@ -1,0 +1,26 @@
+//-
+  Social media <meta> tags
+  
+  Title: Maximum 70 characters.
+  Description: Maximum 200 characters.
+  Image:  It should be at least 600x315 pixels, but 1200x630 or larger is preferred (up to 5MB). Stay close to a 1.91:1 aspect ratio to avoid cropping.
+  URL: The canonical URL for your page. This should be the undecorated URL, without session variables, user identifying parameters, or counters.
+
+- var title = "Faux Code Generator"
+- var description = "Turn real code into faux code."
+- var image = "http://knutsynstad.com/fauxcode/thumbnail.png"
+- var url = "http://knutsynstad.com/fauxcode/"
+
+//- Open Graph
+meta(property="og:title" content=title)
+meta(property="og:description" content=description)
+meta(property="og:image" content=image)
+meta(property="og:url" content=url)
+meta(property="og:type" content="website")
+
+//- Twitter
+meta(name="twitter:title" content=title)
+meta(name="twitter:description" content=description)
+meta(name="twitter:image" content=image)
+meta(name="twitter:card" content="summary_large_image")
+meta(name="twitter:creator" content="@knutsynstad")

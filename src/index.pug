@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+  head
+    title Faux Code Generator
+    include meta_social.pug
+    meta(charset='UTF-8')
+    meta(name='description' content='Turn real code into faux code.')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet")
+    link(href="./styles/main.sass" rel="stylesheet")
+  body
+    include svgs/symbols.svg
+    .app
+      header
+        .header-introduction
+          a(href="https://github.com/knutsynstad/faux-code-generator")
+            svg.icon: use(href='#github')
+          h1.header-title Faux Code Generator
+          p.header-description
+            | Turn real code 
+            span.faded (Github Gist)
+            br
+            | into faux code 
+            span.faded (SVG image)
+        svg(viewBox="0 0 290 125").header-illustration: use(href='#illustration')
+      main
+        section.input
+          form
+            label(for="url")
+              | Github Gist 
+              span.faded (full url)
+            .url-wrapper
+              input#url(type="url" placeholder="https://gist.github.com/username/id")
+              .renew-wrapper
+                .renew-tooltip Get random
+                svg#renew.icon: use(xlink:href='#autorenew')
+            .form-options
+              fieldset#theme
+                legend Theme
+                .form-input
+                  input#light(type="radio" value="light" name="theme" checked)
+                  label(for="light") Light
+                .form-input
+                  input#dark(type="radio" value="dark" name="theme")
+                  label(for="dark") Dark
+              fieldset#linecap
+                legend Line ends
+                .form-input
+                  input#rounded(type="radio" value="round" name="linecap" checked)
+                  label(for="rounded") Rounded
+                .form-input
+                  input#squared(type="radio" value="square" name="linecap")
+                  label(for="squared") Squared
+            button#start(type="button") Create Faux Code
+
+        section.output
+          p.output-head
+            | Output (
+            a(download="fauxcode.svg").output-download Download
+            | )
+          #fauxcode
+          a.output-button(download="fauxcode.svg") Download
+
+      footer
+        .acknowledgements
+          | Made by 
+          a(href="https://twitter.com/knutsynstad") @knutsynstad
+          | .
+          br
+          | Source code on 
+          a(href="https://github.com/knutsynstad/faux-code-generator") GitHub
+          | .
+
+        .share
+          p Share on:
+          ul
+            li: a(href="https://twitter.com/intent/tweet?text=Faux%20Code%20Generator:%20Turn%20real%20code%20into%20faux%20code.%20http://knutsynstad.com/fauxcode/") Twitter
+            li: a(href="https://www.facebook.com/sharer/sharer.php?u=http://knutsynstad.com/fauxcode/" target="_blank") Facebook
+            li: a(href="https://www.linkedin.com/shareArticle?mini=true&url=http://knutsynstad.com/fauxcode/&summary=Faux%20Code%20Generator:%20Turn%20real%20code%20into%20faux%20code.") LinkedIn
+
+    script(src='./scripts/main.js')

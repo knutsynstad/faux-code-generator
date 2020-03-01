@@ -1,0 +1,18 @@
+{
+  "text": "#24292e",
+  "text-secondary": "#6a737d",
+  "background": "#ffffff",
+  "line-number": "#444d56",
+  "variable": "#6f42c1",
+  "alt-variable": "#24292e",
+  "keyword": "#d73a49",
+  "atom": "#005cc5",
+  "string": "#032f62",
+  "qualifier": "#6f42c1",
+  "type": "#d73a49",
+  "comment": "#6a737d",
+  "tag": "#22863a",
+  "attribute": "#6f42c1",
+  "link": "#032f62",
+  "header": "#0000ff"
+}
